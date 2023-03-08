@@ -37,3 +37,11 @@ for(let i=0; i<membri.length; i++){
     console.log(membri[i].foto);
     console.log("--------------------------------")
 }
+
+let containerEl= document.getElementById("container");
+
+for(let l=0; l<membri.length; l++){
+    let liEl=document.createElement('li');
+    liEl.innerHTML=(`${membri[l].nome}, ${membri[l].ruolo}, ${membri[l].foto}`);
+    containerEl.append(liEl);
+}
