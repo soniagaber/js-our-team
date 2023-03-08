@@ -1,6 +1,8 @@
-let membri=[{nome:"Wayne Barnett",
-ruolo:"Founder & CEO",
-foto:"wayne-barnett-founder-ceo.jpg"
+let membri=[
+{
+    nome:"Wayne Barnett",
+    ruolo:"Founder & CEO",
+    foto:"wayne-barnett-founder-ceo.jpg"
 },
 {
     nome:"Angela Caroll",
@@ -27,4 +29,11 @@ foto:"wayne-barnett-founder-ceo.jpg"
     ruolo:"Graphic Designer",
     foto:"barbara-ramos-graphic-designer.jpg"
 }
-]
+];
+
+for(let i=0; i<membri.length; i++){
+    console.log(membri[i].nome);
+    console.log(membri[i].ruolo);
+    console.log(membri[i].foto);
+    console.log("--------------------------------")
+}
