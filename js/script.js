@@ -32,16 +32,16 @@ let membri=[
 ];
 
 for(let i=0; i<membri.length; i++){
-    console.log(membri[i].nome);
-    console.log(membri[i].ruolo);
-    console.log(membri[i].foto);
+    for (let key in membri[i]){
+        console.log(key + ":" + membri[i][key]);   
+    }
     console.log("--------------------------------")
 }
 
-let containerEl= document.getElementById("container");
+let ulMembri= document.getElementById("ul-membri");
 
 for(let l=0; l<membri.length; l++){
     let liEl=document.createElement('li');
     liEl.innerHTML=(`${membri[l].nome}, ${membri[l].ruolo}, ${membri[l].foto}`);
-    containerEl.append(liEl);
+    ulMembri.append(liEl);
 }
